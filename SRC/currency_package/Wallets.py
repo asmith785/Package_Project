@@ -1,7 +1,9 @@
 # %%
 
+
 class WalletUSD:
     coversion_rates = {"gbp" :0.73, "euro": 0.86, "yen": 113.94 , "franc": 0.91}
+#shows usd conversion rates for each each currency starting at $1
 
     def __init__(self,currency_amount):
         self.currency_amount = currency_amount
@@ -15,6 +17,7 @@ class WalletUSD:
 
 class WalletGBP:
     coversion_rates = {"usd" :1.36, "euro": 1.18, "yen": 155.98, "franc": 1.24 }
+#shows gbp conversion rates for each each currency starting at $1
 
     def __init__(self,currency_amount):
         self.currency_amount = currency_amount

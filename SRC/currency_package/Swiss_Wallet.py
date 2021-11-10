@@ -1,6 +1,7 @@
 # %%
 class WalletSwiss:
     coversion_rates = {"usd" :1.10, "gpd": 0.81, "euro": 0.95, "yen": 123.84 }
+#shows swiss conversion rates for each each currency starting at $1
 
     def __init__(self,currency_amount):
         self.currency_amount = currency_amount

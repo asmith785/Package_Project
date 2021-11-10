@@ -3,12 +3,13 @@ import Wallets
 import Wallets2
 import Swiss_Wallet
 
+# questions to ask user
 def create_wallet():
     currency_type = input("What is your current currency : usd, gbp, euro, yen, franc?")
     currency_amount = float(input("What is your currency amount?"))
-    #converted_type = input("what currency you would like to convert too: usd, gpd, euro, yen?")
 
-#TODO add validation
+
+# grabs from imported wallet to get currency value
     if currency_type == "usd":
         wallet = Wallets.WalletUSD(currency_amount)
     elif currency_type == "gbp":
@@ -23,10 +24,9 @@ def create_wallet():
         print("invalid currency type")
     return wallet
 
-#___ = create_wallet() to start
-#____.coverted_type(_)
 
-#backend from userInterface
+
+#TODO add validation
+#TODO backend from userInterface
 #TODO update amount left in wallet class method done in wallet.py
-# usd to pound
 # %%
